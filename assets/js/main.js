@@ -1,58 +1,59 @@
-class ProgressRing extends HTMLElement {
-	constructor() {
-		super();
+(function () {
+	class ProgressRing extends HTMLElement {
+		constructor() {
+			super();
 
-		const stroke = this.getAttribute('stroke');
-		const radius = this.getAttribute('radius');
-		const color = this.getAttribute('color');
-		const normalizedRadius = radius - stroke * 2;
-		this._circumference = normalizedRadius * 2 * Math.PI;
+			const stroke = this.getAttribute('stroke');
+			const radius = this.getAttribute('radius');
+			const color = this.getAttribute('color');
+			const normalizedRadius = radius - stroke * 2;
+			this._circumference = normalizedRadius * 2 * Math.PI;
 
-		this._root = this.attachShadow({ mode: 'open' });
-		this._root.innerHTML = `
-    <svg height="${radius * 2}" width="${radius * 2}">
-      <circle 
-        stroke-width="${stroke}" 
-        stroke-dasharray="${this._circumference} ${this._circumference}"
-        fill="transparent"
-        r="${normalizedRadius}" 
-        cx="${radius}" 
-        cy="${radius}"
-        stroke="${color}" 
-      />
-      95
-    </svg>
+			this._root = this.attachShadow({ mode: 'open' });
+			this._root.innerHTML = `
+      <svg height="${radius * 2}" width="${radius * 2}">
+        <circle 
+          stroke-width="${stroke}" 
+          stroke-dasharray="${this._circumference} ${this._circumference}"
+          fill="transparent"
+          r="${normalizedRadius}" 
+          cx="${radius}" 
+          cy="${radius}"
+          stroke="${color}" 
+        />
+        95
+      </svg>
+  
+      <style>
+        circle {
+          transition: stroke-dashoffset 0.4s;
+          transform: rotate(-90deg);
+          transform-origin: 50% 50%;
+        }
+      </style>
+      `;
+		}
 
-    <style>
-      circle {
-        transition: stroke-dashoffset 0.4s;
-        transform: rotate(-90deg);
-        transform-origin: 50% 50%;
-      }
-    </style>
-    `;
-	}
+		setProgress(percent) {
+			const offset = this._circumference - (percent / 100) * this._circumference;
+			const circle = this._root.querySelector('circle');
+			circle.style.strokeDashoffset = offset;
+		}
 
-	setProgress(percent) {
-		const offset = this._circumference - (percent / 100) * this._circumference;
-		const circle = this._root.querySelector('circle');
-		circle.style.strokeDashoffset = offset;
-	}
+		static get observedAttributes() {
+			return ['progress'];
+		}
 
-	static get observedAttributes() {
-		return ['progress'];
-	}
-
-	attributeChangedCallback(name, oldValue, newValue) {
-		if (name === 'progress') {
-			this.setProgress(newValue);
+		attributeChangedCallback(name, oldValue, newValue) {
+			if (name === 'progress') {
+				this.setProgress(newValue);
+			}
 		}
 	}
-}
 
-window.customElements.define('progress-ring', ProgressRing);
+	window.customElements.define('progress-ring', ProgressRing);
 
-(function () {
+  
 	const scrollInit = () => {
 		const navbar = document.querySelector('.navbar');
 
