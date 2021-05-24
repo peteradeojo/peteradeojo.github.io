@@ -1,7 +1,7 @@
 :root {
 	scroll-padding-top: 60px;
 	scroll-margin-top: 120px;
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 * {
@@ -34,22 +34,18 @@ section .h {
 }
 .skill-list .skill {
 	padding: 8px 12px;
-	border-right: 3px solid #ccc;
 	margin-top: 5px;
-}
-.skill div {
 	display: flex;
-	justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.progress-circle {
-	border: 3px solid #ccc;
-	height: 35px;
-	width: 35px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 0.8em;
-	color: #ccc;
+.contact-list {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.contact-list >li > i[class*='fa'] {
+  margin-left: 20px;
+  margin-right: 20px;
 }
