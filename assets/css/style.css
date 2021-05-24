@@ -1,3 +1,9 @@
+:root {
+	scroll-padding-top: 60px;
+	scroll-margin-top: 120px;
+  scroll-behavior: smooth;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -44,6 +50,6 @@ section .h {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  font-size: .8em;
-  color: #ccc;
+	font-size: 0.8em;
+	color: #ccc;
 }

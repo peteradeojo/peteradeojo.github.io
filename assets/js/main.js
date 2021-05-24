@@ -32,7 +32,10 @@
 		skill.append(lineSpan);
 	};
 
-	window.addEventListener('load', scrollInit);
+	window.addEventListener('load', () => {
+    if (document.querySelector('#navigation'))
+  		scrollInit();
+	});
 
 	window.addEventListener('load', () => {
 		const skills = document.querySelectorAll('.skill');
