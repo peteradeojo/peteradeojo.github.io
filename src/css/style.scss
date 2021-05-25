@@ -1,0 +1,35 @@
+$myColor: blue;
+$myFont: Helvetica, sans-serif;
+$prefBgColor: hsl(223, 31%, 15%);
+$prefTextColor: #fff;
+$fontSize: 10px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  padding-top: 30px;
+	font-family: $myFont;
+	color: $myColor;
+	background-color: $prefBgColor;
+	color: $prefTextColor;
+	font-size: $fontSize;
+}
+.container {
+  padding: 8px 16px;
+	width: 98%;
+  margin: auto;
+}
+.box {
+  background-color: #fff;
+  border-radius: 6px;
+  color: #000;
+  padding: 16px 8px;
+  margin-top: 18px;
+}
+
+p {
+  font-size: $fontSize * 1.3;
+}

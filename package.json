@@ -1,0 +1,24 @@
+{
+  "name": "peteradeojo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass --watch src/css/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peteradeojo/peteradeojo.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peteradeojo/peteradeojo.github.io/issues"
+  },
+  "homepage": "https://github.com/peteradeojo/peteradeojo.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.34.0"
+  }
+}
