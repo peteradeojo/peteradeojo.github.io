@@ -53,7 +53,6 @@
 
 	window.customElements.define('progress-ring', ProgressRing);
 
-  
 	const scrollInit = () => {
 		const navbar = document.querySelector('.navbar');
 
@@ -74,45 +73,4 @@
 	window.addEventListener('load', () => {
 		if (document.querySelector('#navigation')) scrollInit();
 	});
-
-	// window.addEventListener('load', () => {
-	// 	const circle = document.querySelector('.progress-ring__circle');
-	// 	const radius = circle.r.baseVal.value;
-	// 	const circumference = radius * 2 * Math.PI;
-
-	// 	circle.style.strokeDasharray = `${circumference} ${circumference}`;
-	// 	circle.style.strokeDashoffset = circumference;
-
-	// 	const setProgress = (percent) => {};
-
-	// 	setProgress(circle.dataset.percent);
-	// });
 })();
-
-// const showProgress = (skill, data) => {
-// 	let lineSpan = document.createElement('span');
-// 	lineSpan.style.width = `${data.progress}%`;
-// 	lineSpan.style.display = 'block';
-// 	lineSpan.style.height = '5px';
-// 	lineSpan.style.marginTop = '8px';
-// 	lineSpan.style.backgroundColor = data.progressbar;
-
-// 	const roundSpan = document.createElement('span');
-// 	roundSpan.classList.add('progress-circle');
-// 	roundSpan.style.color = data.progressbar;
-// 	roundSpan.innerHTML = `${data.progress}%`;
-
-// 	skill.querySelector('div').appendChild(roundSpan);
-// 	skill.append(lineSpan);
-// };
-
-// window.addEventListener('load', () => {
-// 	const skills = document.querySelectorAll('.skill');
-
-// 	skills.forEach((skill) => {
-// 		const dataset = skill.dataset;
-// 		if (dataset.progress) {
-// 			showProgress(skill, dataset);
-// 		}
-// 	});
-// });

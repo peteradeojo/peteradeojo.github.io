@@ -9,6 +9,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/aos/dist/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>PeterAdeOjo</title>
 </head>
@@ -39,11 +40,11 @@
 
     <section id="about">
       <h1 class="h">PeterAdeOjo</h1>
-      <div class="row">
-        <div class="col-sm-6">
+      <div class="row mt-3">
+        <div class="col-sm-4 col-md-3">
           <img src="" alt="profile image">
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8 col-md-9">
           <p>Hi there!
 
             I'm Boluwatife, a Software Engineer and Backend Web Developer. I love creating and building accessible and
@@ -102,9 +103,32 @@
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="tab-pane container active" id="projects">
-              <h3>Projects</h3>
-              <p>Give me work abeg</p>
+            <div class="tab-pane container active border" id="projects">
+              <!-- <h3>Projects</h3> -->
+
+              <div class="project-list">
+                <div class="project">
+                  <div class="project-title">Maternal-Child Specialists' Clinics</div>
+                  <div class="project-img d-none d-md-block">
+                    <img src="assets/img/mclanding.png" alt="Maternal-Child Specialists' Clinics" class="img-fluid">
+                  </div>
+                  <div class="project-desc">
+                    Maternal-Child Specialists' Clinics is a rapidly growing hospital in Ado-Ekiti, Ekiti state. The aim
+                    of this project was to develop a website and administrative interface between the patients and the
+                    administration for the purpose of contacting and managing appointments. The project is still in it's
+                    early stages but is also still under development and updating.
+                    <br><br>
+                    This project was built with <br><br>
+                    <ul>
+                      <li>Bootstrap & JQuery</li>
+                      <li>PHP</li>
+                    </ul>
+                  </div>
+                  <div class="project-link">
+                    <a href="https://maternalchildhosp.com" target="_blank" rel="noopener noreferrer">Check it out.</a>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="tab-pane container fade" id="apps">
               <h3>Apps</h3>
@@ -129,8 +153,12 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/aos/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 
