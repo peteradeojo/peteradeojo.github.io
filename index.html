@@ -1,46 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="Description" content="Enter your description here" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/aos/dist/aos.css" />
-    <title>Portfolio</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="Description" content="Enter your description here" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/aos/dist/aos.css" />
+		<title>Portfolio</title>
+	</head>
 
-  <body>
-    <div class="container">
-      <h1>PeterAdeOjo</h1>
-      <div class="box" id="about">
-        <div class="img" id="profile">
-          <img src="" alt="Me" title="Me" />
-          <div class="p-3">
-            <p><strong>Ade-Ojo Boluwatife</strong></p>
-            <p><em>Web Developer / Software Engineer</em></p>
-          </div>
-        </div>
+	<body>
+		<div class="container">
+			<h1>PeterAdeOjo</h1>
+			<div class="box" id="about">
+				<div class="img" id="profile">
+					<img src="/assets/img/1613851780461.jpg" alt="Me" title="Me" />
+					<div class="p-3">
+						<p><strong>Ade-Ojo Boluwatife</strong></p>
+						<p><em>Web Developer / Software Engineer</em></p>
+					</div>
+				</div>
 
-        <div class="mt-5">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            laboriosam facere et nobis natus, ex nisi ullam nemo ut ratione
-            dicta molestias fugit recusandae sequi ad excepturi labore velit
-            cum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
-            reprehenderit aliquid tenetur, ea vel suscipit voluptas
-            necessitatibus magnam ex, minima enim porro modi recusandae unde
-            voluptatibus quas quos impedit labore.
-          </p>
-        </div>
-      </div>
-    </div>
+				<div class="mt-5" id="about-me">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam facere et nobis natus, ex nisi ullam nemo ut ratione dicta molestias fugit recusandae sequi ad excepturi
+						labore velit cum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit reprehenderit aliquid tenetur, ea vel suscipit voluptas necessitatibus magnam ex, minima enim porro modi
+						recusandae unde voluptatibus quas quos impedit labore.
+					</p>
+				</div>
+			</div>
+		</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/aos/dist/aos.js"></script>
-  </body>
+		<div class="row container" data-aos="fade-in">
+			<div id="services" class="p-2">
+				<div class="box">
+					<h2 class="p-3">Services <i class="fa fa-screwdriver"></i></h2>
+					<div class="p-3">
+						<p>With my years of coding and web development, I belive I can masterfully offer the following services</p>
+
+						<div class="tab-pane mt-4 tab-vertical">
+							<ul class="tabs">
+								<li data-target="#service1" class="active">Personal Websites</li>
+								<li data-target="#service2">Health Information Systems</li>
+							</ul>
+
+							<div class="tab-content px-3" style="overflow-y: auto; height: 430px;">
+								<div id="service1" class="tab p-2">
+									<h3>Personal/Portfolio Websites</h3>
+									<p class="mt-3">Need a website to share your thoughts, ideas, concepts, designs? Or you need a blog site, where you can post your own writeups and content for the world to see.</p>
+									<p class="mt-1">
+										Or maybe you need a site to showcase your skills and attributes, possibly for the purpose of employment. Let me help you attract audiences to your very own customized and
+										personalized web page or site.
+									</p>
+								</div>
+								<div id="service2" class="tab p-2">
+									<h3>Health Information Systems</h3>
+									<p class="mt-4">
+										A good <strong>HIS</strong> integrates all of a hospitals activities into one platform to enable security and easier access. From scheduling appointments or operations to
+										dispensing drugs at the pharmacy.
+									</p>
+									<p class="mt-2">Contact me today and get a complete, above-standard Health Information System for your establishment.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="works" class="p-2">
+				<div class="box">
+					<h2 class="p-3">Works</h2>
+					<p class="mt-2 px-3">Here are some of the projects and applications I've worked on</p>
+
+					<div class="tab-pane tab-vertical mt-5 p-3">
+						<ul class="tabs">
+							<li data-target="#work1">Projects</li>
+							<li data-target="#work2">Applications</li>
+						</ul>
+						<div class="tab-content px-3" style="overflow-y: auto; height: 430px;">
+							<div class="tab" id="work1">
+								<h3 class="mb-5">Projects</h3>
+								<div class="card">
+									<div class="card-img">
+										<img src="/assets/img/mclanding.png" alt="Maternal-Child Specialists' Clinics" />
+									</div>
+									<div class="card-body">
+										<p class="h4 mb-3">Maternal-Child Specialists' Clinics</p>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste animi impedit ut? Dolor vel tempora blanditiis quod nemo possimus nam ad voluptas a, suscipit, sapiente voluptates
+											quaerat facere. Dignissimos, a?
+										</p>
+									</div>
+									<div class="card-footer">
+										<a href="https://maternalchildhosp.com/">Click here to visit.</a>
+									</div>
+								</div>
+							</div>
+							<div class="tab" id="work2">
+								<h3 class="mb-5">Applications</h3>
+								<div class="card">
+									<div class="card-img">
+										<img src="/assets/img/abweather-app.png" alt="ABWeather App" />
+									</div>
+									<div class="card-body">
+										<p class="h3 mb-3">ABWeather</p>
+										<p>
+											Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore natus iste doloremque error iure, veniam ut corporis, exercitationem in quam ipsum vitae reprehenderit voluptate
+											atque, commodi qui similique soluta? Qui.
+										</p>
+									</div>
+									<div class="card-footer">
+										<a href="https://abweather-adeojo.web.app">Click here to visit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="container" data-aos="fade-in">
+			<h3 class="center my-3">Contact Me</h3>
+			<div class="box">
+				<ul class="contact-list">
+					<li>
+						<a href="https://twitter.com/_peterstpatrick" target="_blank" rel="noreferrer noopener" title="Twitter"><i class="fab fa-twitter"></i></a>
+					</li>
+					<!-- <li>
+						<a href="mailto:adeojopeter@gmail.com" title="Mail"><i class="fa fa-inbox"></i></a>
+					</li> -->
+					<li>
+						<a href="https://api.whatsapp.com/send/?phone=2347089746049&text=Hi,%20I'm contacting from your webpage&app_absent=0" target="_blank" rel="noreferrer noopener" title="WhatsApp"
+							><i class="fab fa-whatsapp"></i
+						></a>
+					</li>
+					<li>
+						<a href="https://instagram.com/boluwatife.xx" target="_blank" rel="noreferrer noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="assets/aos/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 1000,
+				offset: 80,
+			});
+		</script>
+		<script src="/assets/js/main.js"></script>
+	</body>
 </html>

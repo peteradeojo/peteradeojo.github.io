@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\HP\Desktop\projects\peteradeojo.github.io\.yarn\releases\yarn-1.22.10.cjs init
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\HP\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Git\;C:\myscripts;C:\Program Files\nodejs;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\Git\usr\bin;C:\Users\HP;C:\Users\HP\AppData\Local\Programs\Python\Python39;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;C:\xampp\php;C:\Users\HP\AppData\Local\ComposerSetup\bin;C:\Users\HP\AppData\Roaming\Composer\vendor\bin;C:\xampp\mysql\bin;C:\Program Files (x86)\GitHub CLI;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\HP\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Notepad++;C:\Users\HP\AppData\Local\Programs\Python\Python39\Scripts;C:\Program Files\Google\Chrome\Application;C:\paths\chromedriver;C:\Users\HP\AppData\Local\Programs\Fiddler;C:\Users\HP\AppData\Roaming\npm;C:\Users\HP\.dotnet\tools;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code Insiders\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.2.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\HP\Desktop\projects\peteradeojo.github.io\.yarn\releases\yarn-1.22.10.cjs:131420:13)
+      at Interface.emit (node:events:365:28)
+      at Interface._ttyWrite (node:readline:1069:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:365:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:365:28)
+      at addChunk (node:internal/streams/readable:314:12)
+
+npm manifest: 
+  {
+    "name": "peteradeojo.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "sass --watch src/css/style.scss assets/css/style.css"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/peteradeojo/peteradeojo.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/peteradeojo/peteradeojo.github.io/issues"
+    },
+    "homepage": "https://github.com/peteradeojo/peteradeojo.github.io#readme",
+    "devDependencies": {
+      "sass": "^1.34.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

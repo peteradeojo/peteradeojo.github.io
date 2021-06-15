@@ -20,5 +20,6 @@
   "homepage": "https://github.com/peteradeojo/peteradeojo.github.io#readme",
   "devDependencies": {
     "sass": "^1.34.0"
-  }
+  },
+  "dependencies": {}
 }
