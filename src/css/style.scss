@@ -3,23 +3,140 @@ $myFont: Helvetica, sans-serif;
 $prefBgColor: hsl(223, 31%, 15%);
 $prefTextColor: #fff;
 $fontSize: 10px;
+$padding: 4px;
+$margin: 6px;
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.p-1 {
+  padding: $padding;
+}
+.p-2 {
+  padding: $padding * 2;
+}
+.p-3 {
+  padding: $padding * 2.5;
+}
+.p-4 {
+  padding: $padding * 3;
+}
+.p-5 {
+  padding: $padding * 4;
+}
+.p-0 {
+  padding: 0;
+}
+
+.m-1 {
+  margin: $margin;
+}
+.m-2 {
+  margin: $margin * 2;
+}
+.m-3 {
+  margin: $margin * 2.5;
+}
+.m-4 {
+  margin: $margin * 3;
+}
+.m-5 {
+  margin: $margin * 4;
+}
+.m-0 {
+  margin: 0;
+}
+
+.pt-1 {
+	padding-top: $padding;
+}
+.pt-2 {
+	padding-top: $padding * 2;
+}
+.pt-3 {
+	padding-top: $padding * 2.5;
+}
+.pt-4 {
+	padding-top: $padding * 3;
+}
+.pt-5 {
+	padding-top: $padding * 4;
+}
+.pt-0 {
+	padding-top: 0;
+}
+
+.mt-1 {
+	margin-top: $margin;
+}
+.mt-2 {
+	margin-top: $margin * 2;
+}
+.mt-3 {
+	margin-top: $margin * 2.5;
+}
+.mt-4 {
+	margin-top: $margin * 3;
+}
+.mt-5 {
+	margin-top: $margin * 4;
+}
+.mt-0 {
+	margin-top: 0;
+}
+
+.pb-1 {
+  padding-bottom: $padding;
+}
+.pb-2 {
+  padding-bottom: $padding * 2;
+}
+.pb-3 {
+  padding-bottom: $padding * 2.5;
+}
+.pb-4 {
+  padding-bottom: $padding * 3;
+}
+.pb-5 {
+  padding-bottom: $padding * 4;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: $margin;
+}
+.mb-2 {
+  margin-bottom: $margin * 2;
+}
+.mb-3 {
+  margin-bottom: $margin * 2.5;
+}
+.mb-4 {
+  margin-bottom: $margin * 3;
+}
+.mb-5 {
+  margin-bottom: $margin * 4;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+
+
 body {
   padding-top: 30px;
-	font-family: $myFont;
-	color: $myColor;
-	background-color: $prefBgColor;
-	color: $prefTextColor;
-	font-size: $fontSize;
+  font-family: $myFont;
+  color: $myColor;
+  background-color: $prefBgColor;
+  color: $prefTextColor;
+  font-size: $fontSize;
 }
 .container {
   padding: 8px 16px;
-	width: 98%;
+  width: 98%;
   margin: auto;
 }
 .box {
@@ -28,6 +145,20 @@ body {
   color: #000;
   padding: 16px 8px;
   margin-top: 18px;
+}
+
+#about #profile {
+  display: flex;
+}
+
+#about #profile img {
+  min-height: 120px;
+  min-width: 120px;
+  border: 1px solid $myColor;
+}
+
+@media (min-width: 768px) {
+
 }
 
 p {
