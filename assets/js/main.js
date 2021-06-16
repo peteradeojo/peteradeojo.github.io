@@ -10,11 +10,13 @@ $(() => {
 
 			// console.log(target);
 
-			tabContent.querySelector(target.getAttribute('data-target')).classList.add('active');
-			target.classList.add('active');
-			tabList.querySelectorAll('li').forEach((tab) => {
-				tab.addEventListener('click', showTab);
-			});
+			try {
+				tabContent.querySelector(target.getAttribute('data-target')).classList.add('active');
+				target.classList.add('active');
+				tabList.querySelectorAll('li').forEach((tab) => {
+					tab.addEventListener('click', showTab);
+				});
+			} catch (error) {}
 		});
 	})();
 });
