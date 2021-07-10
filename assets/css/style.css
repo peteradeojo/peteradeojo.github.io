@@ -364,6 +364,18 @@ input {
   font-size: 14px;
 }
 
+.btn {
+  padding: 6px;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.btn.btn-theme {
+  background: blue;
+  color: #fff;
+}
+
 .tab-pane {
   display: flex;
   flex-direction: column;
@@ -500,6 +512,29 @@ input {
 
 .contact-list a:visited {
   color: blue;
+}
+
+.form-group {
+  padding: 1em 0;
+}
+.form-group label {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.form-group label i {
+  font-size: 1.4em;
+  margin-right: 6px;
+}
+.form-group .form-control {
+  width: 90%;
+  padding: 6px 2px;
+  margin: 9px 0 0;
+  border: 1px solid blue;
+  border-radius: 4px;
+}
+.form-group textarea {
+  resize: vertical;
 }
 
 @media (min-width: 768px) {

@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass --watch src/css/style.scss assets/css/style.css"
+    "start": "sass --watch src/css/style.scss assets/css/style.css"
   },
   "repository": {
     "type": "git",
